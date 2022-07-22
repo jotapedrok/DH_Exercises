@@ -1,5 +1,4 @@
 const express = require('express');
-const { restart } = require('nodemon');
 const mock = require('./products.json');
 const PORT = 3001;
 
