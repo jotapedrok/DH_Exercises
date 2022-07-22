@@ -5,5 +5,5 @@ app.get('/', (_req, res) => {
 })
 
 app.listen(3001, () => {
-  console.log('API is running on door: 3001')
+  console.log('API is running on 3001')
 })
