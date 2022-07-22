@@ -35,8 +35,7 @@ app.delete('/:id', (req, res) => {
     res.status(404).json({ message: 'Product not found' });
     return;
   }
-  const removed = products.filter((prod) => prod.id !== Number(id));
-  products = removed;
+  products.splice(products.indexOf(found), 1);
   res.status(200).json({ message: 'deleted!' });
 });
 
